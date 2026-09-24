@@ -220,7 +220,7 @@ export default function App() {
                 >
                   <div className="drink-card-inner">
                     <div className="drink-img-wrapper">
-                      <img src={`${import.meta.env.BASE_URL}${item.img.replace(/^\\//, '')}`} alt={item.name} className="drink-img" />
+                      <img src={`${import.meta.env.BASE_URL}${item.img.substring(1)}`} alt={item.name} className="drink-img" />
                       <div className="drink-price-tag">{item.price}</div>
                       <div className="drink-hover-overlay">
                         <button className="add-btn"><Plus size={24} /></button>
